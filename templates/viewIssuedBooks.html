@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="/static/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <table style="width:100%">
+        <tr>
+          <th>Student Roll no.</th>
+          <th>Student Name</th>
+          <th>Books Issued</th>
+        </tr>
+        {% for stu in all %}
+          <tr>
+            <td>{{stu.roll}}</td>
+            <td>{{stu.handle}}</td>
+            <td>
+              {% for book in stu.books %}
+                 {{book}},
+                 <br>
+              {% endfor %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Librarian Dashboard</title>
+    <link href="/static/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class='title'>Librarian Dashboard</h1>
+      <table class="borderless">
+        <tr >
+          <td class="borderless">
+            <form class="" action="/librarian/add" method="post">
+              <input type="submit" class="btn" value="Add new student">
+            </form>
+          </td>
+          <td class="borderless">
+            <form class="" action="/librarian/view" method="post">
+              <input type="submit" class="btn" value="View student">
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td class="borderless">
+            <form class="" action="/librarian/delete" method="post">
+              <input type="submit" class="btn" value="Delete student">
+            </form>
+          </td>
+          <td class="borderless">
+            <form class="" action="/librarian/addBook" method="post">
+              <input type="submit" class="btn" value="Add book">
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td class="borderless">
+            <form class="" action="/librarian/viewBooks" method="post">
+              <input type="submit" class="btn" value="View books">
+            </form>
+          </td>
+          <td class="borderless">
+            <form class="" action="/librarian/issue" method="post">
+              <input type="submit" class="btn" value="Issue book">
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td class="borderless">
+            <form class="" action="/librarian/viewissue" method="post">
+              <input type="submit" class="btn" value="View issued books">
+            </form>
+          </td>
+          <td class="borderless">
+            <form class="" action="/librarian/return" method="post">
+              <input type="submit" class="btn" value="Return book">
+            </form>
+          </td>
+        </tr>
+      </table>
+    <form class="" action="/logout" method="post">
+      <input type="submit" class="btn" value="Logout">
+    </form>
+  </div>
+  </body>
+</html>

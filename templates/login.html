@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Login</title>
+    <link href="/static/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class='title'>{{title}}</h1>
+      <form class="" action="/auth" method="post">
+        <label for="emailid">Email ID:</label>
+        <input type="email" name="id" class="logn" id="emailid" value="">
+        <br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass"  class="logn" id="pass" value="">
+        <input type="hidden" name="type" value={{type}}>
+        <br>
+        <h2>{{err}}</h2>
+        <input type="Submit" class="btn" value="Login">
+      </form>
+    </div>
+  </body>
+</html>

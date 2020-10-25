@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="/static/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Roll No.</th>
+        </tr>
+        {% for stu in all %}
+          <tr>
+            <td>{{stu.handle}}</td>
+            <td>{{stu.email}}</td>
+            <td>{{stu.roll}}</td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </body>
+</html>
